@@ -24,7 +24,7 @@ module.exports.createCampground = async (request, response) => {
       const campground = new Campground(request.body.campground);
       campground.geometry = data.body.features[0].geometry;
       campground.author = request.user._id;
-      console.log(campground);
+      // console.log(campground);
       await campground.save();
 
       // Flash a message once we have created the campround, then redirect
