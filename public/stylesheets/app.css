@@ -1,0 +1,13 @@
+#cluster-map {
+  width: 100%;
+  height: 500px;
+}
+
+#map {
+  width: auto;
+  height: 300px;
+}
+
+.card-img-top {
+  max-height: 400px;
+}

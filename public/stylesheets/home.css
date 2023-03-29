@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+video {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.cover-container {
+  max-width: 60vw;
+}
+
+.nav-link {
+  cursor: pointer;
+  border-bottom: 0.1rem solid transparent;
+}
+.nav-link.active {
+  border-bottom-color: white;
+}
+
+.nav-link:hover {
+  border-bottom-color: white;
+}
+
+#campButton,
+#campButton:hover {
+  background-color: white;
+  color: black;
+}
