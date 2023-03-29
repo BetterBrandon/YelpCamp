@@ -38,8 +38,9 @@ async function loadImagesForArray() {
   return arr;
 }
 
+const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
 // Connecting to the MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/yelp-camp", {
+mongoose.connect(dbUrl, {
   useNewURLParser: true,
   useUnifiedTopology: true,
 });
